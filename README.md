@@ -132,7 +132,9 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 
 `Press yw` to copy the first word on the **right side**. 
 
-`Press p` to paste content of the buffer
+`Press p` to paste content of the buffer before the cursor position
+
+`Press P` to paste content of the buffer after the cursor position
 
 
 #### Repetition of previuos command
@@ -146,3 +148,16 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 
 `Press <C-r>` for redo changes
 
+
+#### Replacing the mistakes
+
+`:%s/true/false/g` -> This command works as a regular expression for search and replace.
+
+This command will replace all the *true* with *false*. The **g** at the end is responsible for extending the search and replacing for all the matches. Otherwise, only the first match is replaced.
+
+`:s/true/false/g` -> Here the ':s' command will do the exact same function as above but only **in the current line instead of the entire file**
+
+There are different flags as *g* that we can use in way to modify the result.
+Ex. `:%s/true/false/gci`
+   * *i* flag -> That make it case insensitive to characters in search, because the default is case sensitive.
+   * *c* flag -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm ig you want to perform a replace on each other
