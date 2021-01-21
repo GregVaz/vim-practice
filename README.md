@@ -78,8 +78,10 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 #### Go to start/end of line
 
 `Press $` to go to the end of the line
+
 `Press 0` to go to the beginning of the line
 
+`Press A` to go to the end of the line and enter on InsertMode
 
 #### Goto line 
 
@@ -100,4 +102,28 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 
 
 #### Insert a new line
+
 `Press o or O` to create a new line and start insert mode
+
+
+#### Removing a character
+
+`Press x or X` to remove the character under the cursor 
+
+`Press r` to replace the character under the cursor with a new character
+
+
+#### Deleting
+
+`Press dw` to delete the first work on the **right side**. This action copies the content and you can paste it
+
+`Press p` to paste content of the buffer
+
+`Press d#w or d#e` to delete the number selected of words
+
+
+#### Repetition of previuos command
+
+`Press .` to repeat the previous command
+
+  
