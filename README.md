@@ -160,4 +160,4 @@ This command will replace all the *true* with *false*. The **g** at the end is r
 There are different flags as *g* that we can use in way to modify the result.
 Ex. `:%s/true/false/gci`
    * *i* flag -> That make it case insensitive to characters in search, because the default is case sensitive.
-   * *c* flag -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm ig you want to perform a replace on each other
+   * *c* flag -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm if you want to perform a replace on each other
