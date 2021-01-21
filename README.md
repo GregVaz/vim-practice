@@ -90,5 +90,14 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 `Press #G` to jump directly to a specific line
 
 
+#### Search /text with n and N
+
+`Press /` and then write the text you are looking for
+
+`Press n` if you do a search then you can get the next occurrence
+
+`Press N` if you do a search then you can get the previos ocurrence 
+
+
 #### Insert a new line
 `Press o or O` to create a new line and start insert mode
