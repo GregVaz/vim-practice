@@ -2,7 +2,7 @@
 
 ## Introduction
 It’s a editor, one of the most popular text editors.
-It’s a clone of the VI editor, and is written by Bran Moolenaar.
+It’s a clone of the VI editor, and is, written by, Bran Moolenaar.
 
 * Features
   * It's memory footprint is very low
@@ -23,8 +23,8 @@ You can use this mode to enter/edit text.
 **Visual mode**
 
 You can visually selec text and run commands on selected sections.
-   * To switch from command mode to visual mode **type v**
-   * To switch from any other mode to visual mode first back to command mode by **pressing Escape _ESC_**
+* To switch from command mode to visual mode **type v**
+* To switch from any other mode to visual mode first back to command mode by **pressing Escape _ESC_**
 
 ## Basic Commands
 ### Command mode
@@ -69,6 +69,7 @@ Also you can use a n number of movement for this commands.
 
 Pressing the number then the word i- and finally the word or letter
 
+`[0-9]i{a-zA-Z}* <ESC>`
 `5iHello ESC` -> HelloHelloHelloHelloHello
 
 
@@ -161,3 +162,18 @@ There are different flags as *g* that we can use in way to modify the result.
 Ex. `:%s/true/false/gci`
    * *i* flag -> That make it case insensitive to characters in search, because the default is case sensitive.
    * *c* flag -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm if you want to perform a replace on each other
+
+If you made a simple replacement you can repeat the action with `&` for repeat and `u` for undo.
+
+
+### Use counts to Do Simple Arithmetic
+
+The <C-a> and <C-x> commands perform addition and substration on numbers.
+
+| Keystrokes | Buffer contents |
+| ---------------- | -------------------------------------- |
+| {start} | .blog { background-position: 0px 0px } |
+|: `yyp` :| .blog { background-position: 0px 0px } |
+|: `cW.news<ESC>` :| .news { background-position: 0px 0px } |
+|: `180<C-a>` :| .news { background-position: 180px 0px } |
+|: `180<C-x>` :| .news { background-position: 180px -180px } |
