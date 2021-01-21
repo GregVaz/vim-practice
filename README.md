@@ -69,4 +69,26 @@ Pressing the number then the word i- and finally the word or letter
 
 `5iHello ESC` -> HelloHelloHelloHelloHello
 
- 
+#### Go to matching parentheses %
+
+Pressing `%` you can jump to the matching parenthesis or brackets
+(start) to the [final]
+
+
+#### Go to start/end of line
+
+`Press $` to go to the end of the line
+`Press 0` to go to the beginning of the line
+
+
+#### Goto line 
+
+`Press gg` takes you to the beginnig of the document
+
+`Press G` takes you to the end of the document
+
+`Press #G` to jump directly to a specific line
+
+
+#### Insert a new line
+`Press o or O` to create a new line and start insert mode
