@@ -34,21 +34,39 @@ You can visually selec text and run commands on selected sections.
 
 `:q!` -> Quit editor without saving changes
 
-**:wq** -> Save the file and then quit vim
+`:wq` -> Save the file and then quit vim
 
 > We can combine (with theirs own rules) the different commands of vim
 
 #### Basic movement around vim
 
 Use the key `h` to move to the left
+
 Use the key `l` to move to the right
+
 Use the key `j` to move to the bottom
+
 Use the key `k` to move to the top
 
-#### Bais word movement
+#### Basic word movement
 
 Use the key `w` to move to the start of the next word
+
 Use the key `e` to move to the end of the word
+
 Use the key `b` to move to the beginning of the word
 
 
+Also you can use a n number of movement for this commands.
+
+`3w` is the same as pressing w three times
+
+`9l` is the same as pressing l nine times
+
+#### Insert text repeatedly
+
+Pressing the number then the word i- and finally the word or letter
+
+`5iHello ESC` -> HelloHelloHelloHelloHello
+
+ 
