@@ -168,7 +168,7 @@ If you made a simple replacement you can repeat the action with `&` for repeat a
 
 ### Use counts to Do Simple Arithmetic
 
-The <C-a> and <C-x> commands perform addition and substration on numbers.
+The \<C-a\> and \<C-x\> commands perform addition and substration on numbers.
 
 | Keystrokes | Buffer contents |
 | :----------------: | -------------------------------------- |
