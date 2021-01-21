@@ -45,3 +45,10 @@ Use the key `l` to move to the right
 Use the key `j` to move to the bottom
 Use the key `k` to move to the top
 
+#### Bais word movement
+
+Use the key `w` to move to the start of the next word
+Use the key `e` to move to the end of the word
+Use the key `b` to move to the beginning of the word
+
+
