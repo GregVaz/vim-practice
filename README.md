@@ -38,7 +38,7 @@ You can visually selec text and run commands on selected sections.
 
 > We can combine (with theirs own rules) the different commands of vim
 
-#### Basic movement around vim
+### Basic movement around vim
 
 Use the key `h` to move to the left
 
@@ -47,6 +47,7 @@ Use the key `l` to move to the right
 Use the key `j` to move to the bottom
 
 Use the key `k` to move to the top
+
 
 #### Basic word movement
 
@@ -63,11 +64,13 @@ Also you can use a n number of movement for this commands.
 
 `9l` is the same as pressing l nine times
 
+
 #### Insert text repeatedly
 
 Pressing the number then the word i- and finally the word or letter
 
 `5iHello ESC` -> HelloHelloHelloHelloHello
+
 
 #### Go to matching parentheses %
 
@@ -82,6 +85,7 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 `Press 0` to go to the beginning of the line
 
 `Press A` to go to the end of the line and enter on InsertMode
+
 
 #### Goto line 
 
@@ -113,13 +117,22 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 `Press r` to replace the character under the cursor with a new character
 
 
-#### Deleting
+#### Deleting the world
 
-`Press dw` to delete the first work on the **right side**. This action copies the content and you can paste it
+`Press dd` to delete a complete line
 
-`Press p` to paste content of the buffer
+`Press dw` to delete the first word on the **right side**. This action copies the content and you can paste it
 
 `Press d#w or d#e` to delete the number selected of words
+
+
+#### Copy the world
+
+`Press yy` to copy a line
+
+`Press yw` to copy the first word on the **right side**. 
+
+`Press p` to paste content of the buffer
 
 
 #### Repetition of previuos command
@@ -127,3 +140,9 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 `Press .` to repeat the previous command
 
   
+#### If you made a select without a where, don't worry you can undo
+
+`Press u` for undo changes
+
+`Press <C-r>` for redo changes
+
