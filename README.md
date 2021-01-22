@@ -229,4 +229,4 @@ The \<C-a\> and \<C-x\> commands perform addition and substration on numbers.
 | `180<C-a>` | .news { background-position: 180px 0px } |
 | `180<C-x>` | .news { background-position: 180px -180px } |
 
-### Nueva Area
+### Nueva Are
