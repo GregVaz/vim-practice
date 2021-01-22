@@ -91,10 +91,6 @@ Also you can use a n number of movement for this commands.
 
 `Press 0` to go to the beginning of the line
 
-`Press A` to go to the end of the line and enter on InsertMode
-
-`Press I` to go to the beginning of the line and enter on InserMode
-
 `Press g_` to jump to the last non-black character of the line
 
 `Press fx` to jump to the next ocurrence of character x
@@ -137,7 +133,20 @@ Also you can use a n number of movement for this commands.
 #### Insert a new line
 
 `Press o` to create a new line below and start insert mode
+
 `Press O` to create a new line above and start insert mode
+
+`Press a` insert mode (append) after the cursor
+
+`Press A` to go to the end of the line and enter on InsertMode
+
+`Press i` to insert before the cursor
+
+`Press I` to go to the beginning of the line and enter on InserMode
+
+`Press ea` to insert (append) at the end of the word
+
+`\<ESC\>` exit to insert mode
 
 
 #### Removing a character
