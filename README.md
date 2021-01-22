@@ -40,22 +40,37 @@ You can visually selec text and run commands on selected sections.
 
 ### Basic movement around vim
 
-Use the key `h` to move to the left
+`h` -> move to the left
 
-Use the key `l` to move to the right
+`l` -> move to the right
 
-Use the key `j` to move to the bottom
+`j` -> move to the bottom
 
-Use the key `k` to move to the top
+`k` -> move to the top
+
+
+### Basic movement on screen
+
+`H` -> move to the top
+
+`M` -> move to the middle
+
+`L` -> move to the bottom
 
 
 #### Basic word movement
 
-Use the key `w` to move to the start of the next word
+`w` -> move to the start of the next word
 
-Use the key `e` to move to the end of the word
+`W` -> move to the start of the next word (words can contain punctuation)
 
-Use the key `b` to move to the beginning of the word
+`e` -> move to the end of the word
+
+`E` -> move to the end of the word (words can contain punctuation)
+
+`b` -> move to the beginning of the word
+
+`B` -> move to the beginning of the word (words can contain punctuation)
 
 
 Also you can use a n number of movement for this commands.
@@ -65,18 +80,9 @@ Also you can use a n number of movement for this commands.
 `9l` is the same as pressing l nine times
 
 
-#### Insert text repeatedly
-
-Pressing the number then the word i- and finally the word or letter
-
-`[0-9]i{a-zA-Z}* <ESC>`
-`5iHello ESC` -> HelloHelloHelloHelloHello
-
-
 #### Go to matching parentheses %
 
-Pressing `%` you can jump to the matching parenthesis or brackets
-(start) to the [final]
+`Press %` you can jump to the matching parenthesis or brackets (),[],{}
 
 
 #### Go to start/end of line
@@ -108,12 +114,15 @@ Pressing `%` you can jump to the matching parenthesis or brackets
 
 #### Insert a new line
 
-`Press o or O` to create a new line and start insert mode
+`Press o` to create a new line below and start insert mode
+`Press O` to create a new line above and start insert mode
 
 
 #### Removing a character
 
-`Press x or X` to remove the character under the cursor 
+`Press x` to remove the character under the cursor
+
+`Press X` to remove the character before under the cursor
 
 `Press r` to replace the character under the cursor with a new character
 
@@ -160,10 +169,21 @@ This command will replace all the *true* with *false*. The **g** at the end is r
 
 There are different flags as *g* that we can use in way to modify the result.
 Ex. `:%s/true/false/gci`
-   * *i* flag -> That make it case insensitive to characters in search, because the default is case sensitive.
-   * *c* flag -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm if you want to perform a replace on each other
 
-If you made a simple replacement you can repeat the action with `&` for repeat and `u` for undo.
+`i flag` -> That make it case insensitive to characters in search, because the default is case sensitive.
+
+`c flag` -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm if you want to perform a replace on each other
+
+
+## Interesting commands
+
+#### Insert text repeatedly
+
+Pressing the number then the word i- and finally the word or letter
+
+`[0-9]i{a-zA-Z}* <ESC>`
+`5iHello ESC` -> HelloHelloHelloHelloHello
+
 
 
 ### Use counts to Do Simple Arithmetic
