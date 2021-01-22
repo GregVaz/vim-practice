@@ -93,6 +93,28 @@ Also you can use a n number of movement for this commands.
 
 `Press A` to go to the end of the line and enter on InsertMode
 
+`Press I` to go to the beginning of the line and enter on InserMode
+
+`Press g_` to jump to the last non-black character of the line
+
+`Press fx` to jump to the next ocurrence of character x
+
+`Press tx` to jump to the before next ocurrence of the character t
+
+`Press zz` center cursor on the screen
+
+`Press <C-e>` to move screen down one line (without moving cursor)
+
+`Press <C-y>` to move screen up one line (without the cursor)
+
+`Press <C-b>` to move back one fll screen
+
+`Press <C-f>` to move forward one full screen
+
+`Press <C-d>` to move forward 1/2 screen
+
+`Press <C-u>` to move back 1/2 screen
+
 
 #### Goto line 
 
