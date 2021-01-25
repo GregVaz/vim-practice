@@ -245,4 +245,51 @@ The \<C-a\> and \<C-x\> commands perform addition and substration on numbers.
 | `180<C-x>` | .news { background-position: 180px -180px } |
 
 
+### Insert mode
 
+#### Make corrections instantly from Insert Mode
+
+`<C-h>` -	Delete back one character (backspace)
+
+`<C-w>` -	Delete back one word
+
+`<C-u>` -	Delete back to start of line
+
+
+#### Get back to the Normal Mode
+
+`<Esc>` -	Switch to Normal Mode
+
+`<C-[>` -	Switch to Normal Mode
+
+`<C-o>` -	Swtich to Insert Normal Mode
+
+> Insert Normal Mode is a speacial version of Normal Mode, which gives us one bullet. We can fire off a single command, after which we'll be returned to 
+
+#### Paste from a Register without Leaving Insert Mode
+
+`<C-r>0` -	Paste the text that we just yanked at the current cursor position
+
+
+#### Do calculations in place
+
+`<C-r>=<Operation><CR>` -	You can get airthmetic operations on insert mode, press <C-r> with = and this open a prompt at the bottom of the screen where we can type the expression that we want to evaluate.
+Ex. 6 tacos, each costing $15, totals $ -> <C-r>=6\*15<ENTER> -> totals $90
+
+
+#### Insert unusual characters by Character Code
+
+`<C-v>{code}` -   Insert any arbitrary character if we know its numeric decial code. Vim expects the numeric code to consist of three digits.
+
+`<C-v>u{code}` -   Insert any arbitrary character if we know its numeric hexadecimal code. Vim expects the numeric code to consist of four digits.
+
+`ga` -	to find out the numeric code for any character in your document
+
+
+#### Overwrite existing text with Replace Mode
+> Replace mode is identical to Insert mode, except that it overwrites existing text in the document.
+
+`R` -	Press R from Normal Mode to acces to Replace mode, here you typing as in Insert Mode but in Replace mode the line length doesn't change.
+
+
+ 	
