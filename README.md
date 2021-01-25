@@ -130,6 +130,22 @@ Also you can use a n number of movement for this commands.
 `Press N` if you do a search then you can get the previos ocurrence 
 
 
+
+## Operator + Action = Action
+|Trigger|Effect|
+|-------|----------------|
+|`c`|Change|
+|`d`|Delete| 
+|`y`|Yank into register| 
+|`g~`|Swap case| 
+|`gu`|Make lowercase| 
+|`gU`|Make uppercase| 
+|`>`|Shift right| 
+|`<`|Shift left| 
+|`=`|Autoindent| 
+|`!`|Filter {motion} lines thought an external program| 
+
+
 #### Insert a new line
 
 `Press o` to create a new line below and start insert mode
@@ -206,11 +222,10 @@ Ex. `:%s/true/false/gci`
 `c flag` -> This can helps a lot, It's the *confirmation* flag, Vim wil ask you to confirm if you want to perform a replace on each other
 
 
-## Interesting commands
 
 #### Insert text repeatedly
 
-Pressing the number then the word i- and finally the word or letter
+Pressing the number then the word i and finally the word or letter
 
 `[0-9]i{a-zA-Z}* <ESC>`
 `5iHello ESC` -> HelloHelloHelloHelloHello
@@ -229,4 +244,5 @@ The \<C-a\> and \<C-x\> commands perform addition and substration on numbers.
 | `180<C-a>` | .news { background-position: 180px 0px } |
 | `180<C-x>` | .news { background-position: 180px -180px } |
 
-### Nueva Area
+
+
