@@ -266,6 +266,7 @@ The \<C-a\> and \<C-x\> commands perform addition and substration on numbers.
 
 > Insert Normal Mode is a speacial version of Normal Mode, which gives us one bullet. We can fire off a single command, after which we'll be returned to 
 
+
 #### Paste from a Register without Leaving Insert Mode
 
 `<C-r>0` -	Paste the text that we just yanked at the current cursor position
@@ -291,5 +292,3 @@ Ex. 6 tacos, each costing $15, totals $ -> <C-r>=6\*15<ENTER> -> totals $90
 
 `R` -	Press R from Normal Mode to acces to Replace mode, here you typing as in Insert Mode but in Replace mode the line length doesn't change.
 
-
- 	
