@@ -292,3 +292,27 @@ Ex. 6 tacos, each costing $15, totals $ -> <C-r>=6\*15<ENTER> -> totals $90
 
 `R` -	Press R from Normal Mode to acces to Replace mode, here you typing as in Insert Mode but in Replace mode the line length doesn't change.
 
+
+### Visual Mode
+> Visual mode allows us to define a selection of text adnd then operate upon it.
+
+`v` -	Enable character-wise Visual mode
+
+`V` -	Enable line-wise Visual mode
+
+`<C-v>` -	Enable block wise Visual mode
+
+`gv` -	Reselect the last visual selection
+
+`<C-[> | <ESC>` -	Switch to Normal mode
+
+
+#### Change columns of text
+
+`<C-v>jje` -	enable line-wise visual mode, then we down two lines and go to the end of the word.
+
+`c` -	Change to insert mode (change), and write the new word fo replacement
+
+`<Esc>` -	And finally you will see the changes on all the selections
+
+
